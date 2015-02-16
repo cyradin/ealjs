@@ -1,0 +1,31 @@
+{
+  "name": "ealjs",
+  "description": "Node.js EVE API Library.",
+  "version": "0.1.0",
+  "main": "./test.js",
+  "author": "cyradin <cyradin@gmail.com>",
+  "keywords": [
+    "eve",
+    "api",
+    "eveapi"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyradin/ealjs"
+  },
+  "bugs": {
+    "url": "https://github.com/cyradin/ealjs/issues"
+  },
+  "homepage": "https://github.com/cyradin/ealjs",
+  "dependencies": {
+    "async": "^0.9.0",
+    "request": "^2.53.0",
+    "underscore": "^1.7.0",
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
