@@ -4,20 +4,20 @@ hub._       = require('underscore');
 hub.async   = require('async');
 var api     = require('./lib/api.js');
 
-var _neal = function() {};
+var _ealjs = function() {};
 
-_neal.prototype.key = function(keyID, vCode) {
+_ealjs.prototype.key = function(keyID, vCode) {
     return new api.key(keyID, vCode);
 };
 
-_neal.prototype.char = function(keyID, vCode, characterID, accessMask) {
+_ealjs.prototype.char = function(keyID, vCode, characterID, accessMask) {
     return new api.char(keyID, vCode, characterID, accessMask);
 };
 
-_neal.prototype.server = function() {
+_ealjs.prototype.server = function() {
     return new api.server();
 };
 
-var neal = new _neal;
+var ealjs = new _ealjs;
 
-module.exports = neal;
+module.exports = ealjs;

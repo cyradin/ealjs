@@ -50,6 +50,7 @@ char.get('mailbodies', {ids: [345676097, 332636164]},  function(err, result) {
 ```
 
 ###Scopes
+
 __Server__
 
 Includes all API functions that don't need authentication by keyID and vCode,
@@ -69,7 +70,7 @@ Character functions (`'characterinfo'`, `'charactersheet'`, `'mailmessages'`, `'
 ```javascript
 var char = eveapi.char(keyid, vcode, characterid[, accessmask]);
 ```
-_Note: if you don't set access mask, apikeyinfo will be called once to set it.
+<b>Note</b>: if you don't set access mask, access check will be disabled.
 
 __Corp__
 
@@ -86,12 +87,12 @@ Coming soon
 __Arguments__
 * `apiType` - name of the API function (see [New Eden Development](https://neweden-dev.com/) or
 config/config.js in the module folder).
-_Note: All of them must be written in lower case. (i.e. `'apikeyinfo'`, `'charactersheet'`).
+<b>Note</b>: All of them must be written in lower case. (i.e. `'apikeyinfo'`, `'charactersheet'`).
 * `param` - you can provide additional parameters (message IDs, row count etc.)
-_Note: Parameter names must be written in a lower case.
+<b>Note</b>: Parameter names must be written in a lower case.
 * `callback(err, result)` - 
 
-__Note: Each `<rowset>` field if received XML will be named as it's `"name"` attribute.
+<b>Note</b>: Each `<rowset>` field if received XML will be named as it's `"name"` attribute.
 
 __Quick example__
 ```javascript
@@ -162,6 +163,7 @@ console.dir(apiKey.apikeyinfo)
 
 <a name="access" />
 #### 2. Access
+Returns all masks that can be accessed by this key OR all API function names of that masks.
 ```javascript
 apiKey.access(mask[, names]);
 ```
@@ -186,4 +188,27 @@ __Example 3__
 var char = eveapi.char(keyid, vcode, characterid);
 console.dir(char.access(268435455, true));
 /* [ 'accountstatus', 'accountbalance', 'assetlist', 'blueprints', 'calendareventattendees', 'characterinfo', 'charactersheet', 'contactlist', 'contactnotifications', 'contractbids', 'contractitems', 'contracts', 'facwarstats', 'industryjobs', 'industryjobshistory', 'killmails', 'locations', 'mailbodies', 'mailinglists', 'mailmessages', 'marketorders', 'medals', 'notifications', 'notificationtexts', 'planetarycolonies', 'planetarylinks', 'planetarypins', 'planetaryroutes', 'research', 'skillintraining', 'skillqueue', 'standings', 'upcomingcalendarevents', 'walletjournal', 'wallettransactions' ] */
+```
+
+<a name="hasAccess" />
+#### 3. hasAccess
+Checks if API key has access to given function.
+```javascript
+apiKey.hasAccess(apiType[, mask]);
+```
+__Arguments__
+
+* `apiType` - name of the API function (see [New Eden Development](https://neweden-dev.com/) or
+config/config.js in the module folder).
+* `mask` - provide custom access mask if you want. Else `accessMask` property will be used (if it doesn't exist, method will return `true`).
+
+__Example__
+
+```javascript
+// apikey.accessMask = 268435455;
+console.dir(apiKey.hasAccess('mailmessages'));
+// true
+
+console.dir(apiKey.hasAccess('mailmessages', 1));
+// false
 ```

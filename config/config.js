@@ -42,7 +42,6 @@ module.exports = {
                 accessMask: 4,
                 url: 'char/calendareventattendees',
                 param: ['eventid'],
-                dependsOn: "this.CharUpcomingCalendarEvents",
                 disabled: false
             },
             characterinfo: {
@@ -70,14 +69,12 @@ module.exports = {
                 accessMask: 67108864,
                 url: 'char/contractbids',
                 param: ['contractid'],
-                dependsOn: "this.CharContracts",
                 disabled: false
             },
             contractitems: {
                 accessMask: 67108864,
                 url: 'char/contractitems',
                 param: ['contractid'],
-                dependsOn: "this.CharContracts",
                 disabled: false
             },
             contracts: {
@@ -110,14 +107,12 @@ module.exports = {
                 accessMask: 134217728,
                 url: 'char/locations',
                 param: ['ids'],
-                dependsOn: "this.CharAssets",
                 disabled: false
             },
             mailbodies: {
                 accessMask: 512,
                 url: 'char/mailbodies',
                 param: ['ids'],
-                dependsOn: "this.CharMailMessages",
                 disabled: false
             },
             mailinglists: {
@@ -150,7 +145,6 @@ module.exports = {
                 accessMask: 32768,
                 url: 'char/notificationtexts',
                 param: ['ids'],
-                dependsOn: "this.CharNotifications",
                 disabled: false
             },
             planetarycolonies: {
@@ -162,21 +156,18 @@ module.exports = {
                 accessMask: 2,
                 url: 'char/planetarylinks',
                 param: ['planetid'],
-                dependsOn: "this.CharPlanetaryColonies",
                 disabled: false
             },
             planetarypins: {
                 accessMask: 2,
                 url: 'char/planetarypins',
                 param: ['planetid'],
-                dependsOn: "this.CharPlanetaryColonies",
                 disabled: false
             },
             planetaryroutes: {
                 accessMask: 2,
                 url: 'char/planetaryroutes',
                 param: ['planetid'],
-                dependsOn: "this.CharPlanetaryColonies",
                 disabled: false
             },
             research: {
