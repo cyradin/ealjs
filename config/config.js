@@ -16,6 +16,9 @@ module.exports = {
             },
             apikeyinfo: {
                 url: 'account/apikeyinfo'
+            },
+            characters: {
+                url: 'account/characters'
             }
         }
     },
@@ -25,191 +28,157 @@ module.exports = {
         API: {
             accountbalance: {
                 accessMask: 1,
-                url: 'char/accountbalance',
-                disabled: false
+                url: 'char/accountbalance'
             },               
             assetlist: {
                 accessMask: 2,
-                url: 'char/assetlist',
-                disabled: false
+                url: 'char/assetlist'
             },
             blueprints: {
                 accessMask: 2,
-                url: 'char/blueprints',
-                disabled: false
+                url: 'char/blueprints'
             },
             calendareventattendees: {
                 accessMask: 4,
                 url: 'char/calendareventattendees',
-                param: ['eventid'],
-                disabled: false
+                param: ['eventid']
             },
             characterinfo: {
                 accessMask: 16777216,
                 prefix: 'eve/',
-                url: 'eve/characterinfo',
-                disabled: false
+                url: 'eve/characterinfo'
             },
             charactersheet: {
                 accessMask: 8,
-                url: 'char/charactersheet',
-                disabled: false
+                url: 'char/charactersheet'
             },
             contactlist: {
                 accessMask: 16,
-                url: 'char/contactlist',
-                disabled: false
+                url: 'char/contactlist'
             },
             contactnotifications: {
                 accessMask: 32,
-                url: 'char/contactnotifications',
-                disabled: false
+                url: 'char/contactnotifications'
             },
             contractbids: {
                 accessMask: 67108864,
                 url: 'char/contractbids',
-                param: ['contractid'],
-                disabled: false
+                param: ['contractid']
             },
             contractitems: {
                 accessMask: 67108864,
                 url: 'char/contractitems',
-                param: ['contractid'],
-                disabled: false
+                param: ['contractid']
             },
             contracts: {
                 accessMask: 67108864,
-                url: 'char/contracts',
-                disabled: false
+                url: 'char/contracts'
             },
             facwarstats: {
                 accessMask: 64,
-                url: 'char/facwarstats',
-                disabled: false
+                url: 'char/facwarstats'
             },
             industryjobs: {
                 accessMask: 128,
-                url: 'char/industryjobs',
-                disabled: false
+                url: 'char/industryjobs'
             },
             industryjobshistory: {
                 accessMask: 128,
-                url: 'char/industryjobshistory',
-                disabled: false
+                url: 'char/industryjobshistory'
             },
             killmails: {
                 accessMask: 256,
                 url: 'char/killmails',
-                optionalParam: ['fromid', 'rowcount'],
-                disabled: false
+                optionalParam: ['fromid', 'rowcount']
             },
             locations: {
                 accessMask: 134217728,
                 url: 'char/locations',
-                param: ['ids'],
-                disabled: false
+                param: ['ids']
             },
             mailbodies: {
                 accessMask: 512,
                 url: 'char/mailbodies',
-                param: ['ids'],
-                disabled: false
+                param: ['ids']
             },
             mailinglists: {
                 accessMask: 1024,
-                url: 'char/mailinglists',
-                disabled: false                
+                url: 'char/mailinglists'
             },
             mailmessages: {
                 accessMask: 2048,
-                url: 'char/mailmessages',
-                disabled: false
+                url: 'char/mailmessages'
             },
             marketorders: {
                 accessMask: 4096,
                 url: 'char/marketorders',
-                optionalParam: ['orderid'],
-                disabled: false
+                optionalParam: ['orderid']
             },
             medals: {
                 accessMask: 8192,
-                url: 'char/medals',
-                disabled: false
+                url: 'char/medals'
             },
             notifications: {
                 accessMask: 16384,
-                url: 'char/notifications',
-                disabled: false
+                url: 'char/notifications'
             },
             notificationtexts: {
                 accessMask: 32768,
                 url: 'char/notificationtexts',
-                param: ['ids'],
-                disabled: false
+                param: ['ids']
             },
             planetarycolonies: {
                 accessMask: 2,
-                url: 'char/planetarycolonies',
-                disabled: false
+                url: 'char/planetarycolonies'
             },
             planetarylinks: {
                 accessMask: 2,
                 url: 'char/planetarylinks',
-                param: ['planetid'],
-                disabled: false
+                param: ['planetid']
             },
             planetarypins: {
                 accessMask: 2,
                 url: 'char/planetarypins',
-                param: ['planetid'],
-                disabled: false
+                param: ['planetid']
             },
             planetaryroutes: {
                 accessMask: 2,
                 url: 'char/planetaryroutes',
-                param: ['planetid'],
-                disabled: false
+                param: ['planetid']
             },
             research: {
                 accessMask: 65536,
-                url: 'char/research',
-                disabled: false
+                url: 'char/research'
             },
             skillintraining: {
                 accessMask: 131072,
-                url: 'char/skillintraining',
-                disabled: false
+                url: 'char/skillintraining'
             },
             skillqueue: {
                 accessMask: 262144,
-                url: 'char/skillqueue',
-                disabled: false
+                url: 'char/skillqueue'
             },
             standings: {
                 accessMask: 524288,
-                url: 'char/standings',
-                disabled: false
+                url: 'char/standings'
             },
             upcomingcalendarevents: {
                 accessMask: 1048576,
-                url: 'char/upcomingcalendarevents',
-                disabled: false
+                url: 'char/upcomingcalendarevents'
             },
             walletjournal: {
                 accessMask: 2097152,
                 url: 'char/walletjournal',
-                optionalParam: ['fromid', 'rowcount'],
-                disabled: false
+                optionalParam: ['fromid', 'rowcount']
             },
             wallettransactions: {
                 accessMask: 4194304,
                 url: 'char/wallettransactions',
-                optionalParam: ['fromid', 'rowcount'],
-                disabled: false
+                optionalParam: ['fromid', 'rowcount']
             }
         }
     },
-    Eve: {
+    Server: {
         API: {
             alliancelist: {
                 url: 'eve/alliancelist'
