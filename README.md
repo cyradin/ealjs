@@ -78,7 +78,7 @@ Coming soon
 ### Methods:
 * [`get`](#get)
 * [`access`](#access)
-
+* [`hasAccess`](#hasAccess)
 <a name="get" />
 #### 1. Get
 ```javascript
@@ -92,7 +92,7 @@ config/config.js in the module folder).
 <b>Note</b>: Parameter names must be written in a lower case.
 * `callback(err, result)` - 
 
-<b>Note</b>: Each `<rowset>` field if received XML will be named as it's `"name"` attribute.
+<b>Note</b>: Each `<rowset>` field in received XML will be named as it's `"name"` attribute.
 
 __Quick example__
 ```javascript
