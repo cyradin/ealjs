@@ -49,7 +49,7 @@ char.get('mailbodies', {ids: [345676097, 332636164]},  function(err, result) {
 });
 ```
 
-###Scopes
+### Scopes
 
 __Server__
 
@@ -79,6 +79,7 @@ Coming soon
 * [`get`](#get)
 * [`access`](#access)
 * [`hasAccess`](#hasAccess)
+
 <a name="get" />
 #### 1. Get
 ```javascript
