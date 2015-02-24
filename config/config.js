@@ -72,7 +72,8 @@ module.exports = {
             },
             contracts: {
                 accessMask: 67108864,
-                url: 'char/contracts'
+                url: 'char/contracts',
+                optionalParam: ['contractid']
             },
             facwarstats: {
                 accessMask: 64,
@@ -204,6 +205,10 @@ module.exports = {
             },
             conquerablestationlist: {
                 url: 'eve/conquerablestationlist'
+            },
+            corporationsheet: {
+                url: 'corp/corporationsheet',
+                param: ['corporationid']
             },
             errorlist: {
                 url: 'eve/errorlist'
