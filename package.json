@@ -1,13 +1,13 @@
 {
   "name" : "ealjs",
   "description" : "Node.js EVE API Library.",
-  "version" : "0.1.4",
+  "version" : "0.1.5",
   "main" : "./index.js",
   "author" : {
     "name" : "cyradin <cyradin@gmail.com>",
     "email" : "cyradin <cyradin@gmail.com>"
   },
-  "keywords" : ["eve", "api", "eveapi", "EVE Online"],
+  "keywords" : [ "eve", "api", "eveapi", "EVE Online" ],
   "license" : "MIT",
   "repository" : {
     "type" : "git",

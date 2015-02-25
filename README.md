@@ -74,7 +74,12 @@ var char = eveapi.char(keyid, vcode, characterid[, accessmask]);
 
 __Corp__
 
-Coming soon
+Corporation functions (`'corporationsheet'`, `'outpostlist'`)
+```javascript
+var corp = eveapi.corp(keyid, vcode[, accessmask]);
+```
+<b>Note</b>: if you don't set access mask, access check will be disabled.
+
 ### Methods:
 * [`get`](#get)
 * [`access`](#access)

@@ -14,6 +14,10 @@ _ealjs.prototype.char = function(keyID, vCode, characterID, accessMask) {
     return new api.char(keyID, vCode, characterID, accessMask);
 };
 
+_ealjs.prototype.corp = function(keyid, vcode) {
+    return new api.corp(keyid, vcode);
+};
+
 _ealjs.prototype.server = function() {
     return new api.server();
 };

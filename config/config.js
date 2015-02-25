@@ -179,6 +179,152 @@ module.exports = {
             }
         }
     },
+    Corp: {
+        defaultFields: ['cachedUntil'],
+        param: ['keyid', 'vcode'],
+        API: {
+            accountbalance: { 
+                accessMask: 1,
+                optionalParam: ['characterid'],
+                url: 'corp/accountbalance'
+            },
+            assetlist: { 
+                accessMask: 2,
+                url: 'corp/assetlist'
+            },
+            blueprints: { 
+                accessMask: 2,
+                url: 'corp/blueprints'
+            },
+            contactlist: { 
+                accessMask: 16,
+                url: 'corp/contactlist'
+            },
+            containerlog: { 
+                accessMask: 32,
+                url: 'corp/containerlog'
+            },
+            contracts: { 
+                accessMask: 8388608,
+                url: 'corp/contracts',
+                optionalParam: ['contractid']
+            },
+            contractbids: { 
+                accessMask: 8388608,
+                url: 'corp/contractbids',
+                param: ['contractid']
+            },
+            contractitems: { 
+                accessMask: 8388608,
+                url: 'corp/contractitems',
+                param: ['contractid']
+            },
+            corporationsheet: { 
+                accessMask: 8,
+                url: 'corp/corporationsheet'
+            },
+            customsoffices: { 
+                accessMask: 2,
+                url: 'corp/customsoffices',
+                optionalParam: ['characterid']
+            },
+            facilities: { 
+                accessMask: 128,
+                url: 'corp/facilities'
+            },
+            facwarstats: { 
+                accessMask: 64,
+                url: 'corp/facwarstats',
+                optionalParam: ['characterid']
+            },
+            industryjobs: { 
+                accessMask: 128,
+                url: 'corp/industryjobs'
+            },
+            industryjobshistory: { 
+                accessMask: 128,
+                url: 'corp/industryjobshistory'
+            },
+            killmails: { 
+                accessMask: 256,
+                url: 'corp/killmails',
+                optionalParam: ['fromid', 'rowcount']
+            },
+            locations: { 
+                accessMask: 16777216,
+                url: 'corp/locations',
+                param: ['ids']
+            },
+            marketorders: { 
+                accessMask: 4096,
+                url: 'corp/marketorders',
+                optionalParam: ['orderid']
+            },
+            medals: { 
+                accessMask: 8192,
+                url: 'corp/medals'
+            },
+            membermedals: { 
+                accessMask: 4,
+                url: 'corp/membermedals'
+            },
+            membersecurity: { 
+                accessMask: 512,
+                url: 'corp/membersecurity'
+            },
+            membersecuritylog: { 
+                accessMask: 1024,
+                url: 'corp/membersecuritylog'
+            },
+            membertracking: { 
+                accessMask: 2048,
+                url: 'corp/membertracking',
+                optionalParam: ['extended']
+            },
+            outpostlist: { 
+                accessMask: 16384,
+                url: 'corp/outpostlist'
+            },
+            outpostservicedetail: { 
+                accessMask: 32768,
+                url: 'corp/outpostservicedetail',
+                optionalParam: ['itemid']
+            },
+            shareholders: { 
+                accessMask: 65536,
+                url: 'corp/shareholders',
+                optionalParam: ['characterid']
+            },
+            standings: { 
+                accessMask: 262144,
+                url: 'corp/standings',
+                optionalParam: ['characterid']
+            },
+            starbasedetail: { 
+                accessMask: 131072,
+                url: 'corp/starbasedetail',
+                param: ['itemid']
+            },
+            starbaselist: { 
+                accessMask: 524288,
+                url: 'corp/starbaselist'
+            },
+            titles: { 
+                accessMask: 4194304,
+                url: 'corp/titles'
+            },
+            walletjournal: { 
+                accessMask: 1048576,
+                url: 'corp/walletjournal',
+                optionalParam: ['fromid', 'rowcount']
+            },
+            wallettransactions: { 
+                accessMask: 2097152,
+                url: 'corp/wallettransactions',
+                optionalParam: ['fromid', 'rowcount']
+            }
+        }
+    },
     Server: {
         API: {
             alliancelist: {
