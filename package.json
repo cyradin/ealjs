@@ -1,29 +1,34 @@
 {
-  "name" : "ealjs",
-  "description" : "Node.js EVE API Library.",
-  "version" : "0.1.5",
-  "main" : "./index.js",
-  "author" : {
-    "name" : "cyradin <cyradin@gmail.com>",
-    "email" : "cyradin <cyradin@gmail.com>"
+  "name": "ealjs",
+  "description": "Node.js EVE API Library.",
+  "version": "0.1.6",
+  "main": "./index.js",
+  "author": {
+    "name": "cyradin",
+    "email": "cyradin@gmail.com"
   },
-  "keywords" : [ "eve", "api", "eveapi", "EVE Online" ],
-  "license" : "MIT",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/cyradin/ealjs"
+  "keywords": [
+    "eve",
+    "api",
+    "eveapi",
+    "EVE Online"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyradin/ealjs"
   },
-  "bugs" : {
-    "url" : "https://github.com/cyradin/ealjs/issues"
+  "bugs": {
+    "url": "https://github.com/cyradin/ealjs/issues"
   },
-  "homepage" : "https://github.com/cyradin/ealjs",
-  "dependencies" : {
-    "async" : "^0.9.0",
-    "request" : "^2.53.0",
-    "underscore" : "^1.7.0",
-    "xml2js" : "^0.4.4"
+  "homepage": "https://github.com/cyradin/ealjs",
+  "dependencies": {
+    "async": "^0.9.0",
+    "request": "^2.53.0",
+    "underscore": "^1.7.0",
+    "xml2js": "^0.4.4"
   },
-  "scripts" : {
-    "test" : "echo \"Error: no test specified\" && exit 1"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
